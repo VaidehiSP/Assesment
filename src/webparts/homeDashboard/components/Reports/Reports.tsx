@@ -31,10 +31,7 @@ const Reports: React.FC<IHomeDashboardProps> = (props) => {
 
     useEffect(() => {
         getAllTrainings(props.webUrl, props.spHttpClient)
-            // .then((res: any) => {
-            //     setData(res.value || res);
-            //     setLoading(false);
-            // })
+
             .then((res: any) => {
                 const result = res.value || res;
                 setData(result);
@@ -211,33 +208,7 @@ const Reports: React.FC<IHomeDashboardProps> = (props) => {
 
     if (loading) return <p>Loading reports...</p>;
 
-    // return (
-    //     <div>
-    //         <h2>Training Reports</h2>
 
-    //         <table style={{ width: "100%", borderCollapse: "collapse" }}>
-    //             <thead>
-    //                 <tr>
-    //                     <th>Course</th>
-    //                     <th>Status</th>
-    //                     <th>Start</th>
-    //                     <th>End</th>
-    //                 </tr>
-    //             </thead>
-    //             <tbody>
-    //                 {data.map(item => (
-    //                     <tr key={item.ID}>
-    //                         <td>{item.CourseName}</td>
-    //                         <td>{item.Status}</td>
-    //                         <td>{item.StartDate?.substring(0, 10)}</td>
-    //                         <td>{item.EndDate?.substring(0, 10)}</td>
-    //                     </tr>
-    //                 ))}
-    //             </tbody>
-    //         </table>
-
-    //     </div>
-    // );
     return (
         <div style={{
             padding: "12px",
@@ -246,33 +217,7 @@ const Reports: React.FC<IHomeDashboardProps> = (props) => {
         }}>
             <h2>Training Reports</h2>
 
-            {/* <Dropdown
-                label="Filter by Status"
-                options={statusOptions}
-                selectedKey={statusFilter || "All"}
-                styles={{ dropdown: { width: 200, marginBottom: 10 } }}
-                onChange={onStatusChange}
-            />
 
-            <TextField
-                placeholder="Search by Course or Status"
-                value={searchText}
-                onChange={onSearchChange}
-                styles={{ root: { width: 300, marginBottom: 10 } }}
-            />
-
-            <PrimaryButton
-                text="Export to Excel"
-                onClick={exportToExcel}
-                styles={{ root: { marginBottom: 10 } }}
-            /> */}
-
-            {/* <Stack
-                horizontal
-                horizontalAlign="space-between"
-                verticalAlign="end"
-                styles={{ root: { marginBottom: 12 } }}
-            > */}
             <Stack
                 horizontal
                 wrap
@@ -336,14 +281,6 @@ const Reports: React.FC<IHomeDashboardProps> = (props) => {
                 />
             </div>
 
-
-            {/* <DetailsList
-                items={filteredData}
-                columns={columns}
-                setKey="set"
-                layoutMode={DetailsListLayoutMode.fixedColumns}
-                selectionMode={SelectionMode.none}
-            /> */}
         </div>
     );
 };

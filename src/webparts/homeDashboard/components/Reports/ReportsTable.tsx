@@ -1,24 +1,3 @@
-// import * as React from "react";
-// import { DetailsList } from "@fluentui/react";
-// import { ITraining } from "../../models/ITraining";
-
-// interface IProps {
-//     data: ITraining[];
-// }
-
-// const ReportsTable: React.FC<IProps> = ({ data }) => {
-//     const columns = [
-//         { key: "course", name: "Course", fieldName: "CourseName", minWidth: 100 },
-//         { key: "status", name: "Status", fieldName: "Status", minWidth: 80 },
-//         { key: "start", name: "Start Date", fieldName: "StartDate", minWidth: 100 },
-//         { key: "end", name: "End Date", fieldName: "EndDate", minWidth: 100 }
-//     ];
-
-//     return <DetailsList items={data} columns={columns} />;
-// };
-
-// export default ReportsTable;
-
 import * as React from "react";
 import { ITraining } from "../../models/ITraining";
 
