@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.8",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "training-module",
+    "libraryId": "592b6ca7-8253-4421-bb19-a4ac5b5c573c",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "TrainingModule",
+    "solutionShortDescription": "TrainingModule description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

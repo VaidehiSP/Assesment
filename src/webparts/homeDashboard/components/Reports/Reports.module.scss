@@ -1,0 +1,19 @@
+.filterBar {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+td {
+    padding: 6px 0;
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "home-dashboard-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/homeDashboard/HomeDashboardWebPart.js",
+          "manifest": "./src/webparts/homeDashboard/HomeDashboardWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "HomeDashboardWebPartStrings": "lib/webparts/homeDashboard/loc/{locale}.js"
+  }
+}
