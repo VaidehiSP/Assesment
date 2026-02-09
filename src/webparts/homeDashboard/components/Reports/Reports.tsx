@@ -30,7 +30,8 @@ const Reports: React.FC<IHomeDashboardProps> = (props) => {
 
 
     useEffect(() => {
-        getAllTrainings(props.webUrl, props.spHttpClient)
+        const url = "https://ascenworktech.sharepoint.com/sites/Vaidehi/"
+        getAllTrainings(url, props.spHttpClient)
 
             .then((res: any) => {
                 const result = res.value || res;

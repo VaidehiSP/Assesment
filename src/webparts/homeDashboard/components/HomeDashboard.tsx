@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Reports from "./Reports/Reports";
+// import Header from "./Common/Header";
 // import "./Hidedesign.css";
 
 // import ReportsChart from "./Reports/ReportsChart";
@@ -15,6 +16,8 @@ const HomeDashboard: React.FC<IHomeDashboardProps> = (props) => {
 
   return (
     <>
+      {/* <Header title="Home Dashboard" /> */}
+
       {activePage === "home" && (
         <Home onNavigate={() => setActivePage("reports")} />
       )}
