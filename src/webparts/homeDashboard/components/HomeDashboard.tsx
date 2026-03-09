@@ -6,8 +6,12 @@ import Reports from "./Reports/Reports";
 // import "./Hidedesign.css";
 
 // import ReportsChart from "./Reports/ReportsChart";
+import '../components/Hidedesign.css';
 import Home from "./Home/Home";
 import { IHomeDashboardProps } from "./IHomeDashboardProps";
+
+
+
 
 const HomeDashboard: React.FC<IHomeDashboardProps> = (props) => {
 
@@ -16,25 +20,53 @@ const HomeDashboard: React.FC<IHomeDashboardProps> = (props) => {
 
   return (
     <>
-      {/* <Header title="Home Dashboard" /> */}
-
       {activePage === "home" && (
         <Home onNavigate={() => setActivePage("reports")} />
+
       )}
 
       {activePage === "reports" && (
-        <>
-          <Reports
-            webUrl={props.webUrl}
-            spHttpClient={props.spHttpClient} />
+        // <Reports
+        //   context={this.context}
+        //   // webUrl={props.webUrl}
+        //   // spHttpClient={props.spHttpClient}
+        //   onBack={() => setActivePage("home")}
+        // />
+        <Reports context={props.context} />
 
-          {/* <ReportsChart
-            webUrl={props.webUrl}
-            spHttpClient={props.spHttpClient} /> */}
-        </>
       )}
     </>
   );
 };
+
+
+
+// const HomeDashboard: React.FC<IHomeDashboardProps> = (props) => {
+
+//   const [activePage, setActivePage] =
+//     React.useState<"home" | "reports">("home");
+
+//   return (
+//     <>
+//       {/* <Header title="Home Dashboard" /> */}
+
+//       {activePage === "home" && (
+//         <Home onNavigate={() => setActivePage("reports")} />
+//       )}
+
+//       {activePage === "reports" && (
+//         <>
+//           <Reports
+//             webUrl={props.webUrl}
+//             spHttpClient={props.spHttpClient} />
+
+//           {/* <ReportsChart
+//             webUrl={props.webUrl}
+//             spHttpClient={props.spHttpClient} /> */}
+//         </>
+//       )}
+//     </>
+//   );
+// };
 
 export default HomeDashboard;

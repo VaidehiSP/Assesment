@@ -1,6 +1,7 @@
-import { SPHttpClient } from "@microsoft/sp-http";
+// import { SPHttpClient } from "@microsoft/sp-http";
 
 export interface IHomeDashboardProps {
-  webUrl: string;
-  spHttpClient: SPHttpClient;
+  // webUrl: string;
+  // spHttpClient: SPHttpClient;
+  context: any;
 }

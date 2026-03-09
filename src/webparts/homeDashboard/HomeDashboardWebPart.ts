@@ -28,8 +28,9 @@ export default class HomeDashboardWebPart
 
   public render(): void {
     const element = React.createElement(HomeDashboard, {
-      webUrl: this.context.pageContext.web.absoluteUrl,
-      spHttpClient: this.context.spHttpClient
+      // webUrl: this.context.pageContext.web.absoluteUrl,
+      // spHttpClient: this.context.spHttpClient
+      context: this.context
     });
 
     ReactDom.render(element, this.domElement);
