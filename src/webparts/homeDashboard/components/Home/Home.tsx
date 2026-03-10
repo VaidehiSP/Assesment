@@ -27,6 +27,7 @@ const Home: React.FC<IHomeProps> = ({ onNavigate }) => {
     const slider = require("../../assets/BANNERIMAGE.png");
     const featured_image = require("../../assets/Group 16128.png");
     const image = require("../../assets/Group 16129.png");
+    const checkicon = require("../../assets/Group 16130.png");
     const blog1 = require("../../assets/01.png");
     const blog2 = require("../../assets/02.png");
     const blog3 = require("../../assets/03.png");
@@ -89,11 +90,14 @@ const Home: React.FC<IHomeProps> = ({ onNavigate }) => {
 
                     <div className={styles.heroOverlay}>
                         <span className={styles.heroBadge}>100% Satisfaction Guarantee</span>
-                        <h1>Start Your Learning Journey Today</h1>
-                        <p>
-                            Grow with our comprehensive online learning platform. Advance
-                            your career and explore new interests.
-                        </p>
+                        <h1 style={{ color: "#214554", fontFamily: "Arial", lineHeight: "1.3" }}>Start Your Learning Journey Today</h1>
+                        <div className={styles.textrow}>
+                            <div className={styles.line}></div>
+                            <p style={{ color: "#214554" }}>
+                                Grow with our comprehensive online learning platform. Advance
+                                your career and explore new interests.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 {/* // } */}
@@ -150,16 +154,36 @@ const Home: React.FC<IHomeProps> = ({ onNavigate }) => {
 
                         <div className={styles.textContainer}>
                             <span className={styles.badge}>Get To Know About Us</span>
-                            <h2>Discover Our Online Learning Programs</h2>
+                            <h2 style={{ color: "#214554", fontFamily: "Arial", lineHeight: "1.3" }}>Discover Our Online Learning Programs</h2>
                             <p>
                                 Dive into a rich array of courses meticulously crafted to support
                                 your educational and professional growth.
                             </p>
+                            {/* <ul>
+                                <li>Seamless Scheduling</li>
+                            </ul> */}
+
+                            <div className={styles.featurelist}>
+                                <div className={styles.featureitem}>
+                                    <span className={styles.check}> <img src={checkicon} /></span>
+                                    <span className={styles.text}>Seamless Scheduling</span>
+                                </div>
+                                <div className={styles.featureitem}>
+                                    <span className={styles.check}> <img src={checkicon} /></span>
+                                    <span className={styles.text}>Service Guarantee</span>
+                                </div>
+                                <div className={styles.featureitem}>
+                                    <span className={styles.check}> <img src={checkicon} /></span>
+                                    <span className={styles.text}>Integrated Collaboration</span>
+                                </div>
+                            </div>
+
 
                             <PrimaryButton
                                 text="Discover More"
                                 onClick={() => onNavigate("reports")}
                                 className={styles.primaryBtn}
+                                style={{ marginTop: "30px" }}
                             />
                         </div>
                     </div>
@@ -253,8 +277,8 @@ const Home: React.FC<IHomeProps> = ({ onNavigate }) => {
 
                 <div className={styles.blogSection}>
                     <div className={styles.blogHeader}>
-                        <span className={styles.blogSubtitle}>Get To Know About Us</span>
-                        <h2>Our Latest News & Blog</h2>
+                        <span className={styles.badge}>Get To Know About Us</span>
+                        <h2 style={{ color: "#214554", fontFamily: "Arial", lineHeight: "1.3" }}>Our Latest News & Blog</h2>
                         <p>
                             Explore insightful articles, industry trends, and exciting updates curated just for you.
                         </p>
@@ -293,16 +317,38 @@ const Home: React.FC<IHomeProps> = ({ onNavigate }) => {
 
                         <div className={styles.textContainer}>
                             <span className={styles.badge}>Get To Know About Us</span>
-                            <h2>Find Your Path With Our Online Courses</h2>
+                            <h2 style={{ color: "#214554", fontFamily: "Arial", lineHeight: "1.3" }}>Find Your Path With Our Online Courses</h2>
                             <p>
                                 Embark on a personalised journey of growth and discovery with our
                                 online courses.
                             </p>
 
+                            <div className={styles.featurelist}>
+                                <div className={styles.featureitem}>
+                                    <span className={styles.check}> <img src={checkicon} /></span>
+                                    <span className={styles.text}>Personalised Learning Paths</span>
+                                </div>
+                                <div className={styles.featureitem}>
+                                    <span className={styles.check}> <img src={checkicon} /></span>
+                                    <span className={styles.text}>Interactive Course Materials</span>
+                                </div>
+                                <div className={styles.featureitem}>
+                                    <span className={styles.check}> <img src={checkicon} /></span>
+                                    <span className={styles.text}>Expert Instructor Support</span>
+                                </div>
+                            </div>
+
+                            {/* <PrimaryButton
+                                text="Discover More"
+                                onClick={() => onNavigate("reports")}
+                                className={styles.primaryBtn}
+                            /> */}
+
                             <PrimaryButton
                                 text="Discover More"
                                 onClick={() => onNavigate("reports")}
                                 className={styles.primaryBtn}
+                                style={{ marginTop: "50px" }}
                             />
                         </div>
                     </div>

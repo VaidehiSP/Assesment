@@ -1401,8 +1401,36 @@
 
 .sectionContent {
     display: flex;
-    align-items: center;
+    // align-items: center;
     gap: 80px;
+    justify-content: center;
+}
+
+.featurelist {
+    font-family: Arial, sans-serif;
+}
+
+.featureitem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.check {
+    color: #2f80ed;
+    font-size: 16px;
+    margin-right: 8px;
+
+}
+
+.check img {
+    width: 30px;
+    height: 30px;
+}
+
+.text {
+    font-size: 16px;
+    color: #333;
 }
 
 .reverse .sectionContent {
@@ -1435,7 +1463,7 @@
 
 .badge {
     background: #e9f6ff;
-    color: #0078d4;
+    color: #0070AD;
     padding: 6px 12px;
     border-radius: 6px;
     font-size: 12px;
@@ -1521,11 +1549,18 @@
 }
 
 .blogCategory {
-    color: #0078d4;
-    font-size: 12px;
-    font-weight: 600;
+    // color: #0078d4;
+    // font-size: 12px;
+    // font-weight: 600;
     margin: 16px 20px 8px;
-    display: block;
+    display: inline-grid;
+
+    background: #e9f6ff;
+    color: #0070AD;
+    padding: 6px 12px;
+    border-radius: 6px;
+    // font-size: 12px;
+    // font-weight: 600;
 }
 
 .blogMeta {
@@ -1574,6 +1609,24 @@
    LAST SECTION IMAGE
 ================================ */
 
+
+.textrow {
+    display: flex;
+    gap: 12px;
+}
+
+.line {
+    width: 5px;
+    background: #00D4CF;
+}
+
+.textrow p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
 .heroBanner {
     position: relative;
     width: 100%;
@@ -1590,16 +1643,25 @@
     position: absolute;
     top: 80px;
     left: 80px;
-    background: rgba(255, 255, 255, 0.95);
+    background: #ffffff96;
     padding: 30px;
-    border-radius: 12px;
-    max-width: 420px;
+    // border-radius: 12px;
+    max-width: 350px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.heroBadge2 {
+    background: #d6e5ed;
+    color: #0070AD;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
 .heroBadge {
-    background: #e9f6ff;
-    color: #0078d4;
+    background: #0070AD;
+    color: #fff;
     padding: 6px 12px;
     border-radius: 6px;
     font-size: 12px;
